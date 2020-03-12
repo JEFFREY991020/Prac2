@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/what_is_your_nickname"
+        android:hint="What is your nickname?"
         android:inputType="textPersonName"
         android:textAlignment="center"
         tools:layout_editor_absoluteX="85dp"
@@ -35,8 +35,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/layout_margin"
-        android:text="@string/Done"
+
+        android:text="Done"
         android:onClick="clickHandlerFunction"/>
 
     <TextView
@@ -46,6 +46,8 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textAlignment="center"
+        android:background="@color/colorAccent"
+        android:paddingBottom="@dimen/small_padding"
         android:visibility="gone" />
 
     <ImageView
@@ -53,6 +55,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ScrollView
+        android:id="@+id/bio_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/bio_text"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bio" />
+    </ScrollView>
 
 
 </LinearLayout>
